@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: HardcoreyoyoGateWay-Service-SMS
+          # uri: lb://Service-SMS
+          uri: https://www.google.com.tw/
+          predicates:
+            - Path=/
