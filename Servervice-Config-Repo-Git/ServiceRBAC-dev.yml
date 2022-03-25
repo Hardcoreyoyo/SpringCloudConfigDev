@@ -1,29 +1,11 @@
 server:
- port: 8401
+  port: 8402
 
-spring:
- application:
-   name: Service-RBAC
- cloud:
-   nacos:
-     discovery:
-       server-addr: localhost:8848
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/eureka
 
 feign:
- okhttp:
-   enabled: true
-
-
-
-#spring:
-#  application:
-#    name: Service-RBAC
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: nacos:8848
-#        port: ${DISCOVERY_PORT}
-#      config:
-#        server-addr: nacos:8848
-#        file-extension: yaml
-#        group: HARDCOREYOYO_GROUP
+  okhttp:
+    enabled: true
