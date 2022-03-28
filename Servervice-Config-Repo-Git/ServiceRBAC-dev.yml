@@ -10,5 +10,11 @@ feign:
   okhttp:
     enabled: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
+
 github:
   test: 202203282354-for-github-test
