@@ -9,3 +9,6 @@ eureka:
 feign:
   okhttp:
     enabled: true
+
+github:
+  test: 202203282354-for-github-test
