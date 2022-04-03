@@ -8,6 +8,11 @@ spring:
     username: root
     password: admin1234
 
+ribbon:
+  eager-load:
+    enabled: true
+    clients: aservice-sms
+
 # eureka:
 #   client:
 #     service-url:
