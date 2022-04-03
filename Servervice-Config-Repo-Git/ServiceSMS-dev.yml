@@ -1,6 +1,13 @@
 server:
   port: 8402
 
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin1234
+
 # eureka:
 #   client:
 #     service-url:
@@ -9,9 +16,3 @@ server:
 feign:
   okhttp:
     enabled: true
-
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: root
-  password: admin1234
