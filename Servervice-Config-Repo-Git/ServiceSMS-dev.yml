@@ -9,3 +9,9 @@ eureka:
 feign:
   okhttp:
     enabled: true
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: root
+  password: admin1234
