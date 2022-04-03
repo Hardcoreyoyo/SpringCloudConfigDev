@@ -24,4 +24,4 @@ management:
         include: refresh,health
 
 github:
-  test: 2022/0403/2358 for github test
+  test: 2022/0404/0036 for github test
