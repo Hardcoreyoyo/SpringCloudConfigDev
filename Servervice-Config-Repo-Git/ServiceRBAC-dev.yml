@@ -25,3 +25,12 @@ management:
 
 github:
   test: 2022/0404/0049 for github test
+
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        enabled: true
+        requestVolumeThreshold: 20
+        errorThresholdPercentage: 60
+        sleepWindowInMilliseconds: 300000
