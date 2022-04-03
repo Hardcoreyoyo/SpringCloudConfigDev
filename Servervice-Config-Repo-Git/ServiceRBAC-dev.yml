@@ -11,7 +11,7 @@ spring:
 ribbon:
   eager-load:
     enabled: true
-    clients: aservice-sms
+    clients: ServiceSMS
 
 # eureka:
 #   client:
