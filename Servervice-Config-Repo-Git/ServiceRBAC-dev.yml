@@ -32,5 +32,5 @@ hystrix:
       circuitBreaker:
         enabled: true
         requestVolumeThreshold: 20
-        errorThresholdPercentage: 60
-        sleepWindowInMilliseconds: 300000
+        errorThresholdPercentage: 5
+        sleepWindowInMilliseconds: 60000
