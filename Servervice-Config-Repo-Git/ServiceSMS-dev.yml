@@ -16,3 +16,6 @@ spring:
 feign:
   okhttp:
     enabled: true
+
+github:
+  test: 2022/0404/0036 for github test
