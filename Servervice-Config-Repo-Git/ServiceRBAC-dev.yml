@@ -18,3 +18,9 @@ management:
 
 github:
   test: 2022/0329/0057 for github test
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: root
+  password: admin1234
