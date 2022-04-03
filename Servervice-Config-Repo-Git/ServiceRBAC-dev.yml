@@ -1,6 +1,13 @@
 server:
   port: 8401
 
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin1234
+
 # eureka:
 #   client:
 #     service-url:
@@ -18,9 +25,3 @@ management:
 
 github:
   test: 2022/0403/2358 for github test
-
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: root
-  password: admin1234
