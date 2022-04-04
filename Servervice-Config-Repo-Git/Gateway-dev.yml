@@ -22,7 +22,16 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health
+        include: refresh,health,hystrix.stream
+        
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        enabled: true
+        requestVolumeThreshold: 5
+        errorThresholdPercentage: 5
+        sleepWindowInMilliseconds: 60000
         
 github:
   test: 2022/0404/1245 for github test
