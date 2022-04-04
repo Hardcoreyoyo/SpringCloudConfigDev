@@ -10,10 +10,13 @@ spring:
       routes:
         - id: HardcoreyoyoGateWay-ServiceRBAC
           uri: lb://ServiceRBAC
-#           uri: https://www.google.com.tw/
           predicates:
             - Path=/
-
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: admin1234
 
 management:
   endpoints:
