@@ -8,10 +8,14 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: HardcoreyoyoGateWay-ServiceRBAC
+        - id: HardcoreyoyoGateWay-Service-SMS
+          uri: lb://ServiceSMS
+          predicates:
+            - Path=/sms/**
+        - id: HardcoreyoyoGateWay-Service-RBAC
           uri: lb://ServiceRBAC
           predicates:
-            - Path=/
+            - Path=/rbac/**  
   rabbitmq:
     host: mq
     port: 5672
@@ -34,4 +38,4 @@ hystrix:
         sleepWindowInMilliseconds: 60000
         
 github:
-  test: 2022/0404/1245 for github test
+  test: 2022/0404/2115 for github test
