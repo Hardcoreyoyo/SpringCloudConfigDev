@@ -1,10 +1,5 @@
 server:
-  port: 8771
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/eureka
+  port: 18650
 
 spring:
   cloud:
@@ -13,8 +8,8 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: HardcoreyoyoGateWay-Service-SMS
-          # uri: lb://Service-SMS
-          uri: https://www.google.com.tw/
+        - id: HardcoreyoyoGateWay-ServiceRBAC
+          uri: lb://ServiceRBAC
+#           uri: https://www.google.com.tw/
           predicates:
             - Path=/
