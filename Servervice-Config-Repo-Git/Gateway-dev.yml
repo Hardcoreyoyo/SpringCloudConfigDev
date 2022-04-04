@@ -13,3 +13,12 @@ spring:
 #           uri: https://www.google.com.tw/
           predicates:
             - Path=/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
+        
+github:
+  test: 2022/0404/0049 for github test
