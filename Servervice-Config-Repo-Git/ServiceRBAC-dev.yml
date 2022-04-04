@@ -29,7 +29,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,hystrix.stream
+        include: "*"
+#         include: refresh,health,hystrix.stream
 
 github:
   test: 2022/0404/1824 for github test
